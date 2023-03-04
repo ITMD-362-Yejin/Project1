@@ -1,12 +1,9 @@
-//Example JavaScript code
 const interestsSelect = document.querySelector("#interests");
 
-//Add an event listener to the interests select element
 interestsSelect.addEventListener("change", (event) => {
   const selectedValue = event.target.value;
   let message = "";
 
-  //Based on the selected value, generate a message to display to the user
   switch (selectedValue) {
     case "vegetarian":
       message = "Good choice! Our vegetarian recipes are packed with flavor.";
@@ -24,6 +21,5 @@ interestsSelect.addEventListener("change", (event) => {
       message = "Please select an option.";
   }
 
-  //Display the message to the user
   alert(message);
 });
